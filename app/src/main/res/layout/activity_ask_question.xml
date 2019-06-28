@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ask_question">
+
+    <LinearLayout
+        android:id="@+id/askLayout"
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Crop Name:"
+            android:textColor="#1F1D1D"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/cropName"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="Enter Crop Name here"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="20dp"
+            android:text="Your Question?"
+            android:textColor="#19191B"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="147dp"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="Ask your question here."
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/submitQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_rounded"
+            android:onClick="submitQuestion"
+            android:text="Submit Question"
+            android:textColor="#FDFCFC"
+            android:textSize="22sp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
