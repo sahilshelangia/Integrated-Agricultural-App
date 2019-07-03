@@ -35,10 +35,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/customborder"
                 android:clickable="true"
+                android:onClick="cropInfo"
                 android:padding="20dp"
-                app:srcCompat="@drawable/crop_info"
-                android:background="@drawable/customborder"/>
+                app:srcCompat="@drawable/crop_info" />
         </LinearLayout>
 
         <LinearLayout
@@ -77,10 +78,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/customborder"
                 android:clickable="true"
+                android:onClick="weatherInfo"
                 android:padding="20dp"
-                app:srcCompat="@drawable/weathericon"
-                android:background="@drawable/customborder"/>
+                app:srcCompat="@drawable/weathericon" />
 
             <ImageView
                 android:id="@+id/imageView20"

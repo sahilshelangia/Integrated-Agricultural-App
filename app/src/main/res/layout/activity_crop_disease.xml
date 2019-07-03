@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cropdisease">
+
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/crop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textColor="#2489DA"
+            android:textSize="30sp" />
+
+        <ListView
+
+            android:id="@+id/disease"
+            android:layout_width="wrap_content"
+            android:layout_height="680dp"
+            android:layout_below="@+id/crop_name"
+            android:layout_alignStart="@+id/editText"
+            android:layout_alignLeft="@+id/crop_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

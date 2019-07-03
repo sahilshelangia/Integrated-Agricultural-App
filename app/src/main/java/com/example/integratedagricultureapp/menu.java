@@ -17,6 +17,16 @@ public class menu extends AppCompatActivity {
         Intent intent=new Intent(getApplicationContext(),portal.class);
         startActivity(intent);
     }
+
+    public void cropInfo(View view){
+        Intent intent=new Intent(getApplicationContext(),CropInfo.class);
+        startActivity(intent);
+    }
+
+    public void weatherInfo(View view){
+        Intent intent=new Intent(getApplicationContext(),WeatherInfo.class);
+        startActivity(intent);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater=getMenuInflater();

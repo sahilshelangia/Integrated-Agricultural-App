@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Integrated Agriculture App</string>
+    <string name="title_activity_crop_disease">CropDisease</string>
+    <string name="title_activity_disease_detail">DiseaseDetail</string>
 </resources>
