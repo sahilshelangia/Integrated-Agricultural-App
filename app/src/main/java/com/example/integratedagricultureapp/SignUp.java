@@ -78,7 +78,4 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),0);
     }
 
-    public void loginButton(View view) {
-        Log.i("msg","pressed");
-    }
 }

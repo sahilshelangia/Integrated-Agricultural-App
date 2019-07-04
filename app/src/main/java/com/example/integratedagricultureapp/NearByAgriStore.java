@@ -180,6 +180,7 @@ public class NearByAgriStore extends FragmentActivity implements OnMapReadyCallb
 //
                 userLocation = new LatLng(location.getLatitude(), location.getLongitude());
                 if(flag){
+                    Log.i("sahil","-==============");
                     mMap.addMarker(new MarkerOptions().position(userLocation).title("Current Location"));
                     mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation,12));
                 }
