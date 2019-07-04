@@ -1,7 +1,7 @@
 package com.example.integratedagricultureapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -76,5 +76,9 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         InputMethodManager inputMethodManager=(InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
         inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),0);
+    }
+
+    public void loginButton(View view) {
+        Log.i("msg","pressed");
     }
 }

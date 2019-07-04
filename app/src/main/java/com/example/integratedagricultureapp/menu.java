@@ -1,7 +1,7 @@
 package com.example.integratedagricultureapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -13,6 +13,10 @@ import com.parse.ParseUser;
 
 public class menu extends AppCompatActivity {
 
+    public void nearByAgriStore(View view){
+        Intent intent=new Intent(getApplicationContext(),NearByAgriStore.class);
+        startActivity(intent);
+    }
     public void portal(View view){
         Intent intent=new Intent(getApplicationContext(),portal.class);
         startActivity(intent);
