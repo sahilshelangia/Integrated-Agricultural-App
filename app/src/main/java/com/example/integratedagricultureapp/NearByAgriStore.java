@@ -144,7 +144,8 @@ public class NearByAgriStore extends FragmentActivity implements OnMapReadyCallb
                 // for ActivityCompat#requestPermissions for more details.
                 return;
             }
-            locationManager.requestLocationUpdates(locationManager.GPS_PROVIDER, 0, 0, locationListener);
+            Log.i("ready","permission granted call location update");
+            locationManager.requestLocationUpdates(locationManager.NETWORK_PROVIDER , 0, 0, locationListener);
         }
     }
     @Override
@@ -178,6 +179,7 @@ public class NearByAgriStore extends FragmentActivity implements OnMapReadyCallb
             public void onLocationChanged(Location location) {
 //                Log.i("Location",location.toString());
 //
+                Log.i("ready","on location change called");
                 userLocation = new LatLng(location.getLatitude(), location.getLongitude());
                 if(flag){
                     Log.i("sahil","-==============");
@@ -204,12 +206,19 @@ public class NearByAgriStore extends FragmentActivity implements OnMapReadyCallb
         };
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)!= PackageManager.PERMISSION_GRANTED){
             // ask for the permission
+            Log.i("ready","request permission");
             ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION},1);
         }
         else{
-            locationManager.requestLocationUpdates(locationManager.GPS_PROVIDER,0,0,locationListener);
-            Location lastKnownLocation=locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+            Log.i("ready","already have permission");
+
+            locationManager.requestLocationUpdates(locationManager.NETWORK_PROVIDER ,0,0,locationListener);
+            Location lastKnownLocation=locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+
+
             LatLng userLocation = new LatLng(lastKnownLocation.getLatitude(), lastKnownLocation.getLatitude());
+//            LatLng userLocation = new LatLng(26.218287, 78.182831);
+
             mMap.addMarker(new MarkerOptions().position(userLocation).title("Current Location"));
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation,12));
         }
