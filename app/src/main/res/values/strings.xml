@@ -3,4 +3,5 @@
     <string name="title_activity_crop_disease">CropDisease</string>
     <string name="title_activity_disease_detail">DiseaseDetail</string>
     <string name="title_activity_near_by_agri_store">Map</string>
+    <string name="title_activity_head_lines">HeadLines</string>
 </resources>

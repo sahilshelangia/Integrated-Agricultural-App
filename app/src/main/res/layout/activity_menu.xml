@@ -90,10 +90,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/customborder"
                 android:clickable="true"
+                android:onClick="headLines"
                 android:padding="20dp"
-                app:srcCompat="@drawable/news"
-                android:background="@drawable/customborder"/>
+                app:srcCompat="@drawable/news" />
         </LinearLayout>
 
         <LinearLayout

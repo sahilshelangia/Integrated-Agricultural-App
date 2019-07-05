@@ -13,6 +13,10 @@ import com.parse.ParseUser;
 
 public class menu extends AppCompatActivity {
 
+    public void headLines(View view){
+        Intent intent=new Intent(getApplicationContext(),AllNews.class);
+        startActivity(intent);
+    }
     public void nearByAgriStore(View view){
         Intent intent=new Intent(getApplicationContext(),NearByAgriStore.class);
         startActivity(intent);
