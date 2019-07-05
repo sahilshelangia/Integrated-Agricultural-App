@@ -24,7 +24,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:replace="android:appComponentFactory">
-        <activity android:name=".AllNews"></activity>
+        <activity android:name=".MandiPrice"></activity>
+        <activity android:name=".SelectMandi" />
+        <activity android:name=".AllNews" />
         <activity
             android:name=".HeadLines"
             android:label="@string/title_activity_head_lines"

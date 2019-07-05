@@ -35,6 +35,10 @@ public class menu extends AppCompatActivity {
         Intent intent=new Intent(getApplicationContext(),WeatherInfo.class);
         startActivity(intent);
     }
+    public void mandi(View view){
+        Intent intent=new Intent(getApplicationContext(),SelectMandi.class);
+        startActivity(intent);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater=getMenuInflater();
